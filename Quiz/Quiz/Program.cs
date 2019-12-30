@@ -47,24 +47,26 @@ namespace Quiz
 
 					while (!ChoiseOver)
 					{
-						if (Console.ReadLine() == "a")
+						string keyboard = Console.ReadLine().ToLower();
+
+						if (keyboard == "a")
 						{
 							isAnswerCorrect = Answers[0] == Sum;
 							ChoiseOver = true;
 						}
-						else if (Console.ReadLine() == "b")
+						else if (keyboard == "b")
 						{
-							isAnswerCorrect = Answers[0] == Sum;
+							isAnswerCorrect = Answers[1] == Sum;
 							ChoiseOver = true;
 						}
-						else if (Console.ReadLine() == "c")
+						else if (keyboard == "c")
 						{
-							isAnswerCorrect = Answers[0] == Sum;
+							isAnswerCorrect = Answers[2] == Sum;
 							ChoiseOver = true;
 						}
-						else if (Console.ReadLine() == "d")
+						else if (keyboard == "d")
 						{
-							isAnswerCorrect = Answers[0] == Sum;
+							isAnswerCorrect = Answers[3] == Sum;
 							ChoiseOver = true;
 						}
 						else
